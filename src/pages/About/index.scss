@@ -1,0 +1,39 @@
+.about {
+    background-color: rgb(45, 34, 24);
+    height: 100vh;
+    .about-text {
+        padding: 3rem;
+        a, p, h1 {
+            color: aliceblue;
+        }
+        h1{
+            font-size: 3rem;
+            padding-bottom: 1rem ;
+        }
+        display: flex;
+        align-items: center;
+        gap:70px;
+       .created{
+        display: flex;
+        padding: 3rem 0;
+        justify-content: space-between;
+        p{
+            display: flex;
+            gap: 10px;
+            align-items:end;
+            a{
+                text-decoration: underline;
+            }
+        }
+       }
+        
+        span {
+            font-family: 'oswald-regular';
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .created{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,39 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader__image {
+    width: 100px;
+    height: 100px;
+    background-image: url("../../../public/img/Property 1=Default.png");
+    background-size: cover;
+    animation: loadAnimation 1s steps(4) infinite;
+  }
+}
+@keyframes loadAnimation {
+  10% {
+    background-image: url("../../../public/img/Property 1=Default.png");
+  }
+  20% {
+    background-image: url("../../../public/img/Property 1=Variant2.png");
+  }
+  30% {
+    background-image: url("../../../public/img/Property 1=Variant3.png");
+  }
+  40% {
+    background-image: url("../../../public/img/Property 1=Variant4.png");
+  }
+
+  50% {
+    background-image: url("../../../public/img/Property 1=Variant5.png");
+  }
+  60% {
+    background-image: url("../../../public/img/Property 1=Variant6.png");
+  }
+  70% {
+    background-image: url("../../../public/img/Property 1=Variant7.png");
+  }
+  80% {
+    background-image: url("../../../public/img/Property 1=Variant8.png");
+  }
+}

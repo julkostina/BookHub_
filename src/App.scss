@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../public/fonts/Oswald-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald-SemiBold";
+  src: url("../public/fonts/Oswald-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish-Regular";
+  src: url("../public/fonts/static/Mulish-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../public/fonts/Oswald-Bold.ttf") format("truetype");
+}
+body{
+  font-family: "Mulish-Regular";
+  h1{
+    font-family: "Oswald-Regular";
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
