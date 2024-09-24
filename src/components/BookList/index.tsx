@@ -3,7 +3,6 @@ import './index.scss';
 import { useGlobalContext } from '../../context';
 import Loader from '../Loader'; 
 import Book from './Book';
-import Header from '../Header';
 
 const BookList: React.FC = () => { const {books, loading, resultTitle} = useGlobalContext();
 const booksWithCovers = books.map((singleBook: any) => {

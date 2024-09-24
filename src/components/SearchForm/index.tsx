@@ -1,9 +1,7 @@
-import React, { MouseEventHandler, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.scss";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../../context";
-import BookList from "../BookList";
 interface SearchFormProps {
   bookList: boolean;
   setBookList: React.Dispatch<React.SetStateAction<boolean>>;
@@ -11,7 +9,6 @@ interface SearchFormProps {
 const SearchForm: React.FC<SearchFormProps> = ({bookList, setBookList}) => {
   const { setSearchTerm, setResultTitle } = useGlobalContext();
   const searchText = useRef<HTMLInputElement>(null);
-  const [showBookList, setShowBookList] = React.useState(bookList); 
 
   useEffect(() => searchText.current?.focus(), []);
   const handleSubmit = (
